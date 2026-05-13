@@ -1,0 +1,18 @@
+# Python scripts used for migration
+clean_links.py
+clean_site.py
+gen_contact.py
+gen_sitemap.py
+identify_dups.py
+
+# Cyotek WebCopy log files
+webcopy-origin.txt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
