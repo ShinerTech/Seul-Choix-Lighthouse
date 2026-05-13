@@ -1,19 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> </title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcement | Seul Choix Point Lighthouse</title>
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: var(--bg-color); min-height: auto; padding: 2rem; }
+    .announcement-card { max-width: 600px; margin: 0 auto; padding: 2rem; text-align: center; }
+    .close-btn { 
+      margin-top: 1.5rem; 
+      padding: 0.5rem 1.5rem; 
+      background: var(--secondary-color); 
+      color: white; 
+      border: none; 
+      border-radius: var(--border-radius); 
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-<div align="center">
+  <div class="card announcement-card">
+    <div align="center">
 <p>
-<input name="button" onclick="window.close()" type="button" value="Close Window"/>
+
 </p>
 <p><strong><font size="3">Information on </font></strong></p>
 <hr/>
 <p>Christmas at the lighthouse is November 30, 2024 11:00am-3:00pm Santa arrives at NOON SHARP! Gifts for the kids!</p>
 <p>
-<input name="button2" onclick="window.close()" type="button" value="Close Window"/>
+
 </p>
 </div>
+    <button class="close-btn" onclick="window.close()">Close Window</button>
+  </div>
 </body>
 </html>

@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Page not found</title>
-  <script>
-    var base = '/greatlakeslighthouse/';
-    var path = window.location.pathname.replace(base, '');
-    sessionStorage.setItem('redirect', path);
-    window.location.replace(base);
-  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found | Seul Choix Point Lighthouse</title>
+  
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .error-container {
+      max-width: 600px;
+      margin: 6rem auto;
+      text-align: center;
+      padding: 3rem;
+    }
+    .error-code {
+      font-size: 6rem;
+      font-weight: 800;
+      color: var(--secondary-color);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
-<body><p>Redirecting&hellip;</p></body>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
+        <img src="logo-official.png" alt="Seul Choix Lighthouse Logo" onerror="this.src='wheel.gif'" / class="">
+        <span class="logo-text" style="display:none">Seul Choix Point Lighthouse</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card error-container">
+      <div class="error-code">404</div>
+      <h2>Lost at Sea?</h2>
+      <p class="mb-3">The page you're looking for has drifted away or never existed.</p>
+      <a href="index.html" class="Lighthouse" style="font-size: 1.2rem;">&larr; Return to Safe Harbor</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Seul Choix Point Lighthouse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
